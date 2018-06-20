@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block body %}
+    <form action="{% url 'home' %}" method="GET">
+        {% csrf_token %}
+        <button type="submit" name="search">
+            <h3>Sign in</h3>
+        </button>
+    </form>
+{% endblock %}
+
