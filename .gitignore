@@ -1,0 +1,5 @@
+**.swp
+**.idea/
+**/migrations/0*.py
+**.pyc
+**/__pycache__/
