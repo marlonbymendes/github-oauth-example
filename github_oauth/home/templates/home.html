@@ -5,11 +5,12 @@ Home
 {% endblock %}
 
 {% block body %}
-    <form action="{% url 'home' %}" method="GET">
-        {% csrf_token %}
-        <button type="submit" name="search">
-            <h3>Sign in</h3>
-        </button>
-    </form>
+    {% if user.username %}
+        <h3>Hello {{ user.username }}!<h3>
+        <a href="{% url 'logout' %}">Sign out</a><br>
+    {% else %}
+        <a href="{% url 'social:begin' 'github' %}">Login with GitHub</a><br>
+    {% endif %}
+
 {% endblock %}
 

@@ -3,3 +3,4 @@
 **/migrations/0*.py
 **.pyc
 **/__pycache__/
+**secrets.py

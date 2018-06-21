@@ -15,8 +15,6 @@ services:
       DJANGO_SETTINGS_MODULE: github_oauth.settings
     ports:
       - "8000:8000"
-    env_file:
-      - .env
 
   db:
     container_name: db
