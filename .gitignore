@@ -1,4 +1,7 @@
+## VIM
 **.swp
+**.swo
+
 **.idea/
 **/migrations/0*.py
 **.pyc

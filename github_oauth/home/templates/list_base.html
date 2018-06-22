@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block head %}
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+
+<h2>Table</h2>
+
+<table>
+  <tr>
+    <th>{{header}}</th>
+  </tr>
+
+  {% for row in rows %}
+      <tr>
+        <td>{{row}}</td>
+      </tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}
